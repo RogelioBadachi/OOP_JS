@@ -1,40 +1,4 @@
-class Cliente {
-    
-    nombreCliente;
-    dniCliente;
-    rutCliente;
 
-}
-
-class CuentaCorriente{
-    numero;
-    #saldo;
-    agencia;
-
-    constructor() {
-        this.#saldo = 0;
-        this.numero = '';
-        this.agencia = '';
-    }
-
-    depositoEnCuenta (valor) {
-        if (valor > 0) {
-            this.#saldo += valor;
-        }
-        return this.#saldo;
-    }
-
-    retirarDeCuenta (valor){
-        if (valor <= this.#saldo) {
-            this.#saldo -= valor;
-        }
-        return this.#saldo;
-    }
-    verSaldo () {
-        return this.#saldo;
-    }
-
-} 
 /*
 const cliente1 = new Cliente();
 
@@ -74,15 +38,15 @@ cuentaDeJaime = new CuentaCorriente();
 let saldo = cuentaDeJaime.verSaldo();
 
 console.log("El Saldo Actual es: " + saldo);
-cuentaDeJaime.depositoEnCuenta(100);
-saldo = cuentaDeJaime.verSaldo();
+saldo = cuentaDeJaime.depositoEnCuenta(100);
+
 console.log("El Saldo Actual es: " + saldo);
-cuentaDeJaime.retirarDeCuenta(50);
-saldo = cuentaDeJaime.verSaldo();
+saldo = cuentaDeJaime.retirarDeCuenta(50);
+
 console.log("El Saldo Actual es: " + saldo);
-cuentaDeJaime.retirarDeCuenta(50);
-saldo = cuentaDeJaime.verSaldo();
+saldo = cuentaDeJaime.retirarDeCuenta(50);
+
 console.log("El Saldo Actual es: " + saldo);
-cuentaDeJaime.depositoEnCuenta(10);
-saldo = cuentaDeJaime.verSaldo();
+saldo = cuentaDeJaime.depositoEnCuenta(10);
+
 console.log("El Saldo Actual es: " + saldo);
