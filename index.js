@@ -22,7 +22,9 @@ class CuentaCorriente{
     }
 
     retirarDeCuenta (valor){
-        this.saldo -= valor;
+        if (valor <= this.saldo) {
+            this.saldo -= valor;
+        }
     }
 
 } 
