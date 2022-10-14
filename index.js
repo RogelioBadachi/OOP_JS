@@ -8,22 +8,22 @@ class Cliente {
 
 class CuentaCorriente{
     numero;
-    saldo;
+    #saldo;
     agencia;
 
     constructor() {
-        this.saldo = 0;
+        this.#saldo = 0;
         this.numero = '';
         this.agencia = '';
     }
 
     depositoEnCuenta (valor) {
-        this.saldo += valor;
+        this.#saldo += valor;
     }
 
     retirarDeCuenta (valor){
-        if (valor <= this.saldo) {
-            this.saldo -= valor;
+        if (valor <= this.#saldo) {
+            this.#saldo -= valor;
         }
     }
 
