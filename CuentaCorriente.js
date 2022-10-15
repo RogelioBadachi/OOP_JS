@@ -1,3 +1,5 @@
+import { Cliente } from "./Cliente.js";
+
 export class CuentaCorriente{
     #cliente;
     numero;
@@ -5,7 +7,9 @@ export class CuentaCorriente{
     #saldo;
 
     set cliente(valor) {
-        this.#cliente = valor;
+        if (valor instanceof Cliente){
+            this.#cliente = valor;
+        }
     }
 
     get cliente() {
