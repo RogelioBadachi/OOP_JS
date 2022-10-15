@@ -39,12 +39,12 @@ const cliente = new Cliente('Jaime','13804050','123224');
 cliente.dniCliente = '13804050';
 cliente.rutCliente = '123224'; */
 
-const cuentaDeJaime = new CuentaCorriente();
-cuentaDeJaime.numero = '1';
+const cuentaDeJaime = new CuentaCorriente(cliente, '1', '001');
+/*cuentaDeJaime.numero = '1';
 cuentaDeJaime.agencia = '001';
 cuentaDeJaime.cliente = cliente;
 //cuentaDeJaime.saldo = 0;
-
+*/
 console.log(cuentaDeJaime);
 let saldo = cuentaDeJaime.verSaldo();
 /*
@@ -64,11 +64,11 @@ console.log("El Saldo Actual es: " + saldo);
 */
 const cliente2 = new Cliente('Maria','16979808','8989');
 
-const cuentaDeMaria = new CuentaCorriente();
-cuentaDeMaria.numero = '2';
+const cuentaDeMaria = new CuentaCorriente(cliente2, '2', '002');
+/*cuentaDeMaria.numero = '2';
 cuentaDeMaria.agencia = '002';
 cuentaDeMaria.cliente = cliente2;
-
+*/
 cuentaDeJaime.transferirParaCuenta(100,cuentaDeMaria);
 
 

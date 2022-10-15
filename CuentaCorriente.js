@@ -16,11 +16,11 @@ export class CuentaCorriente{
         return this.#cliente;
     }
 
-    constructor() {
-        this.#cliente = null;
+    constructor(cliente, numero , agencia) {
+        this.cliente = cliente;
         this.#saldo = 0;
-        this.numero = '';
-        this.agencia = '';
+        this.numero = numero; //this.numero = '';
+        this.agencia = agencia;
     }
 
     depositoEnCuenta (valor) {
