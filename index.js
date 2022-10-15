@@ -1,5 +1,5 @@
 import {CuentaCorriente} from './CuentaCorriente.js';
-//import {Cliente} from './Cliente.js';
+import {Cliente} from './Cliente.js';
 /*
 const cliente1 = new Cliente();
 
@@ -34,8 +34,18 @@ console.log(cuentaCorriente2.saldo);
 cuentaCorriente2.depositoEnCuenta(100);
 console.log(cuentaCorriente2.saldo);
 */
+const cliente = new Cliente();
+cliente.nombreCliente = 'Jaime';
+cliente.dniCliente = '13804050';
+cliente.rutCliente = '123224';
+
 const cuentaDeJaime = new CuentaCorriente();
+cuentaDeJaime.numero = '1';
+cuentaDeJaime.agencia = '001';
+cuentaDeJaime.cliente = cliente;
 //cuentaDeJaime.saldo = 0;
+
+console.log(cuentaDeJaime);
 let saldo = cuentaDeJaime.verSaldo();
 
 console.log("El Saldo Actual es: " + saldo);
