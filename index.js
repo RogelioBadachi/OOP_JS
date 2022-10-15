@@ -58,6 +58,24 @@ console.log("El Saldo Actual es: " + saldo);
 saldo = cuentaDeJaime.retirarDeCuenta(50);
 
 console.log("El Saldo Actual es: " + saldo);
-saldo = cuentaDeJaime.depositoEnCuenta(10);
+saldo = cuentaDeJaime.depositoEnCuenta(1000);
 
 console.log("El Saldo Actual es: " + saldo);
+
+const cliente2 = new Cliente();
+cliente.nombreCliente = 'Maria';
+cliente.dniCliente = '16979808';
+cliente.rutCliente = '8989';
+
+const cuentaDeMaria = new CuentaCorriente();
+cuentaDeMaria.numero = '2';
+cuentaDeMaria.agencia = '002';
+cuentaDeMaria.cliente = cliente;
+
+cuentaDeJaime.transferirParaCuenta(100,cuentaDeMaria);
+console.log('El saldo actual (cuentaJaime) ' + saldo);
+
+const saldoMaria = cuentaDeMaria.verSaldo();
+console.log('El saldo actual (cuentaMaria) ' + saldoMaria);
+const saldoJaime = cuentaDeJaime.verSaldo();
+console.log('Saldo actual de (cuentaJaime) ' + saldoJaime);
