@@ -72,11 +72,12 @@ cuentaDeMaria.cliente = cliente2;
 cuentaDeJaime.transferirParaCuenta(100,cuentaDeMaria);
 
 
-console.log('El saldo actual (cuentaJaime) ' + saldo);
+//console.log('El saldo actual (cuentaJaime) ' + saldo);
 
 console.log('Cuenta de Maria' , cuentaDeMaria.cliente);
-console.log('Cuenta de Jaime ' , cuentaDeJaime);
-const saldoMaria = cuentaDeMaria.verSaldo();
+console.log('Cuenta de Jaime ' , cuentaDeJaime.cliente);
+console.log('Cantidad de cuentas: ', CuentaCorriente.cantidadCuentas);
+/*const saldoMaria = cuentaDeMaria.verSaldo();
 console.log('El saldo actual (cuentaMaria) ' + saldoMaria);
 const saldoJaime = cuentaDeJaime.verSaldo();
-console.log('Saldo actual de (cuentaJaime) ' + saldoJaime);
+console.log('Saldo actual de (cuentaJaime) ' + saldoJaime); */
