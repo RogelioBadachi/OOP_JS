@@ -34,10 +34,10 @@ console.log(cuentaCorriente2.saldo);
 cuentaCorriente2.depositoEnCuenta(100);
 console.log(cuentaCorriente2.saldo);
 */
-const cliente = new Cliente();
-cliente.nombreCliente = 'Jaime';
+const cliente = new Cliente('Jaime','13804050','123224');
+/*cliente.nombreCliente = 'Jaime';
 cliente.dniCliente = '13804050';
-cliente.rutCliente = '123224';
+cliente.rutCliente = '123224'; */
 
 const cuentaDeJaime = new CuentaCorriente();
 cuentaDeJaime.numero = '1';
@@ -47,7 +47,7 @@ cuentaDeJaime.cliente = cliente;
 
 console.log(cuentaDeJaime);
 let saldo = cuentaDeJaime.verSaldo();
-
+/*
 console.log("El Saldo Actual es: " + saldo);
 saldo = cuentaDeJaime.depositoEnCuenta(100);
 
@@ -61,11 +61,8 @@ console.log("El Saldo Actual es: " + saldo);
 saldo = cuentaDeJaime.depositoEnCuenta(1000);
 
 console.log("El Saldo Actual es: " + saldo);
-
-const cliente2 = new Cliente();
-cliente2.nombreCliente = 'Maria';
-cliente2.dniCliente = '16979808';
-cliente2.rutCliente = '8989';
+*/
+const cliente2 = new Cliente('Maria','16979808','8989');
 
 const cuentaDeMaria = new CuentaCorriente();
 cuentaDeMaria.numero = '2';
