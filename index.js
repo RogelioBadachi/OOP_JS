@@ -73,8 +73,11 @@ cuentaDeMaria.agencia = '002';
 cuentaDeMaria.cliente = cliente;
 
 cuentaDeJaime.transferirParaCuenta(100,cuentaDeMaria);
+
+
 console.log('El saldo actual (cuentaJaime) ' + saldo);
 
+console.log('Cuenta de Maria' , cuentaDeMaria);
 const saldoMaria = cuentaDeMaria.verSaldo();
 console.log('El saldo actual (cuentaMaria) ' + saldoMaria);
 const saldoJaime = cuentaDeJaime.verSaldo();
