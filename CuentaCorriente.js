@@ -1,11 +1,19 @@
 export class CuentaCorriente{
-    cliente;
+    #cliente;
     numero;
     agencia;
     #saldo;
 
+    set cliente(valor) {
+        this.#cliente = valor;
+    }
+
+    get cliente() {
+        return this.#cliente;
+    }
+
     constructor() {
-        this.cliente = null;
+        this.#cliente = null;
         this.#saldo = 0;
         this.numero = '';
         this.agencia = '';

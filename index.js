@@ -77,7 +77,7 @@ cuentaDeJaime.transferirParaCuenta(100,cuentaDeMaria);
 
 console.log('El saldo actual (cuentaJaime) ' + saldo);
 
-console.log('Cuenta de Maria' , cuentaDeMaria);
+console.log('Cuenta de Maria' , cuentaDeMaria.cliente);
 console.log('Cuenta de Jaime ' , cuentaDeJaime);
 const saldoMaria = cuentaDeMaria.verSaldo();
 console.log('El saldo actual (cuentaMaria) ' + saldoMaria);
