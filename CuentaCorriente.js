@@ -1,4 +1,4 @@
-class CuentaCorriente{
+export class CuentaCorriente{
     numero;
     #saldo;
     agencia;

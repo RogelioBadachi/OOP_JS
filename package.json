@@ -1,0 +1,20 @@
+{
+  "name": "cuentasbancopopular",
+  "version": "1.0.0",
+  "description": "Gestión de Cuentas Corrientes del Banco Popular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RogelioBadachi/OOP_JS.git"
+  },
+  "author": "Curso Alura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RogelioBadachi/OOP_JS/issues"
+  },
+  "homepage": "https://github.com/RogelioBadachi/OOP_JS#readme",
+  "type": "module"
+}

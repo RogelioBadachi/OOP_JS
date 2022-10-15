@@ -1,4 +1,5 @@
-
+import {CuentaCorriente} from './CuentaCorriente.js';
+//import {Cliente} from './Cliente.js';
 /*
 const cliente1 = new Cliente();
 
@@ -33,7 +34,7 @@ console.log(cuentaCorriente2.saldo);
 cuentaCorriente2.depositoEnCuenta(100);
 console.log(cuentaCorriente2.saldo);
 */
-cuentaDeJaime = new CuentaCorriente();
+const cuentaDeJaime = new CuentaCorriente();
 //cuentaDeJaime.saldo = 0;
 let saldo = cuentaDeJaime.verSaldo();
 
