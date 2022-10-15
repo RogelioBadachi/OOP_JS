@@ -63,14 +63,14 @@ saldo = cuentaDeJaime.depositoEnCuenta(1000);
 console.log("El Saldo Actual es: " + saldo);
 
 const cliente2 = new Cliente();
-cliente.nombreCliente = 'Maria';
-cliente.dniCliente = '16979808';
-cliente.rutCliente = '8989';
+cliente2.nombreCliente = 'Maria';
+cliente2.dniCliente = '16979808';
+cliente2.rutCliente = '8989';
 
 const cuentaDeMaria = new CuentaCorriente();
 cuentaDeMaria.numero = '2';
 cuentaDeMaria.agencia = '002';
-cuentaDeMaria.cliente = cliente;
+cuentaDeMaria.cliente = cliente2;
 
 cuentaDeJaime.transferirParaCuenta(100,cuentaDeMaria);
 
@@ -78,6 +78,7 @@ cuentaDeJaime.transferirParaCuenta(100,cuentaDeMaria);
 console.log('El saldo actual (cuentaJaime) ' + saldo);
 
 console.log('Cuenta de Maria' , cuentaDeMaria);
+console.log('Cuenta de Jaime ' , cuentaDeJaime);
 const saldoMaria = cuentaDeMaria.verSaldo();
 console.log('El saldo actual (cuentaMaria) ' + saldoMaria);
 const saldoJaime = cuentaDeJaime.verSaldo();
